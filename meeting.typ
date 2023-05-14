@@ -31,10 +31,19 @@ asd
 
 
 = Wichtige Begriffe
+Die Definitionen der folgenden Begriffe 
+#defbox("BIPoC", 
+text[Abkürzung für "Black, Indigenous, People of Color" 
+Mit diesem Begriff sollen explizit Schwarze 
+und indigene Identitäten sichtbar gemacht werden, um 
+Antischwarzem Rassismus und der Unsichtbarkeit indigener Gemeinschaften 
+entgegenzuwirken @bipoc.])
+
 #defbox("LGBTQI+", 
-"UmbruLesbian, Gay, Trans, Queer, Intersex")
-#defbox("LGBTQI+", 
-"UmbruLesbian, Gay, Trans, Queer, Intersex")
+text[Abkürzung für "Lesbian, Gay, Trans, Queer, Intersex". Das "+"
+soll die gesamte Vielfalt der sexuellen Orientierungen, Geschlechteridentitäten und -merkmale sowie die unterschiedlichen Ausdrucksformen von
+Geschlechtlichkeit abbilden, nicht nur die, die sich nicht als lesbisch, schwul, bisexuell, trans, queer oder intersexuell identifizieren  a 
+@lgbtqi. ])
 
 - BIPoC
 
@@ -305,3 +314,5 @@ Bauchtasche
 Kalium, Magnesium ect
 
 wenn veranstaltung -> gaesteliste :,D
+
+#bibliography(title:"Quellen", "sources.yml")
