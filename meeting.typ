@@ -1,14 +1,31 @@
 #set text(
-  //font: "Fira Code",
   font: "Conthrax",
-  size: 16pt
+  size: 14pt,
+  lang: "de"
 )
 
 // XXX DON'T USE FOR PRINTING!!!!
-#set page(fill: black.lighten(80%))
+#set page(
+  fill: black.lighten(90%),
+  margin: (x: 2em, y: 3em),
+  footer: [
+    #set text(8pt)
+    #set align(right)
+    Awareness Medical Team | #counter(page).display()
+  ]
+  )
 
-asd ä
-asd
+#show heading.where(level: 1): it => [
+#set align(center)
+#set text(size: 40pt, font: "Airstrike")
+#block(smallcaps(it.body))
+]
+
+#show heading.where(level: 2): it => [
+#set text(size: 22pt,)
+#block(underline(it.body))
+]
+
 #let hl(term, color: blue) = {
   text(color, [*#term*])
 }
@@ -24,295 +41,144 @@ asd
 #let defbox(title, content) = {
   rect(width:100%, fill:red.lighten(70%), 
   stroke: black,
-  [#underline([#title]) : \ 
+  [ #text(size: 22pt, [#title]) \ \
   #content])
 }
 
 
 
+= Disclaimer
+Dieses Dokument fasst die Inhalte der Schulung am 
+13.05.23 zusammen. Es kann sein, dass einzelne Inhalte nicht direkt
+auf die Arbeit des Awareness Medical Team zutreffen - im Zweifel
+gilt immer das aktuelle Material bzw. die Aussagen des Vorstands
+und der Teamleitungen. 
+Es besteht weder ein Anspruch auf Richtig- noch auf 
+Vollständigkeit. 
+
 = Wichtige Begriffe
-Die Definitionen der folgenden Begriffe 
+Die Definitionen der folgenden Begriffe sind dynamisch und wandeln
+sich auch im Laufe der Zeit. Je nach Umfeld können diese Definitionen
+leicht unterschiedliche Bedeutungen haben. 
+
+Zweifelt nicht die Zugehörigkeit einzelner Menschen zu Gruppen an.
+Aussagen wie "du siehst aber garnicht danach aus" o.ä. sind ein 
+absolutes NO-GO!
+
 #defbox("BIPoC", 
 text[Abkürzung für "Black, Indigenous, People of Color" 
 Mit diesem Begriff sollen explizit Schwarze 
 und indigene Identitäten sichtbar gemacht werden, um 
 Antischwarzem Rassismus und der Unsichtbarkeit indigener Gemeinschaften 
-entgegenzuwirken @bipoc.])
+entgegenzuwirken.])
 
 #defbox("LGBTQI+", 
 text[Abkürzung für "Lesbian, Gay, Trans, Queer, Intersex". Das "+"
 soll die gesamte Vielfalt der sexuellen Orientierungen, Geschlechteridentitäten und -merkmale sowie die unterschiedlichen Ausdrucksformen von
-Geschlechtlichkeit abbilden, nicht nur die, die sich nicht als lesbisch, schwul, bisexuell, trans, queer oder intersexuell identifizieren  a 
-@lgbtqi. ])
+Geschlechtlichkeit abbilden, nicht nur die, die sich nicht als lesbisch, schwul, bisexuell, trans, queer oder intersexuell identifizieren.])
 
-- BIPoC
+#defbox("Cisgender",
+text[Als Cisgender werden Menschen bezeichnet, deren Geschlechtsidentität demjenigen Geschlecht entspricht, welches ihnen bei der Geburt zugewiesen wurde.])
 
- Black Indigenous People of Color
-- Cisgender
+#defbox("Non-Binary",
+text[Sammelbegriff für Menschen, die sich nicht
+mit einem der binären Geschlechter (Mann oder Frau) 
+identifizieren. Hierzu gehören z.B. auch Menschen
+die sich als Agender (ohne Geschlechtszugehörigkeit) oder
+Genderfluid (verändernde Geschlechtsidentität) identifizieren.])
 
- Person die sich mit dem ihrem bei der Geburt zugewiesenen G
+#defbox("Kulturelle Aneignung",
+text[Vom englischen "Cultural Appropriation" (somit eher "Kulturdiebstahl"); Die Aneignung kulturellen Gutes marginalisierter
+Gruppen. Klassisches Beispiel: Verkleidung als "Indianer" zu Fasching.])
 
-- Non-Binary
- Person die sich nicht mit dem binaeren Geschlechterrollen identifiziert
-- Kulturelle Aneignung
-- FINTA+
-- Inter\*
-- LGBTQI+
-- Marginalisierung
-- Defininitionsmacht
+#defbox("FLINTA*", 
+text[Abkürzung für "Frauen, Lesben, Inter, Non-Binary, Trans, A-gender" und ist der Versuch einen Ausdruck für eine Personengruppe zu finden, die nicht cis-männlich ist.
+Der "\*" soll hier auch alle Identitäten abdecken, die nicht 
+im Akronym zu finden sind. ])
 
- Subjektives Erleben von sexualisierter Gewalt definiert Sexuelle Gewalt
+#defbox( "Inter*",
+text[Inter\* Menschen haben körperliche Merkmale, die nicht eindeutig als männlich oder weiblich bestimmt werden können oder die gleichzeitig typisch für beide Geschlechter sind. Das kann zum Beispiel die Anatomie betreffen, aber auch genetische Merkmale oder Hormone.])
 
- --> Terme behalten. Wenn Person sexuelle Gewalt
- erfaehrt nicht sofort von Vergewaltigung ec
-- Parteilichkeit
+#defbox("Marginalisierung",
+text[Marginalisierung bezeichnet die Verdrängung von Individuen oder Bevölkerungsgruppen an den Rand der Gesellschaft. Die Verdrängung kann auf verschiedenen Ebenen erfolgen, also zum Beispiel geografisch, wirtschaftlich, sozial oder kulturell sein; meist spielt sie sich auf mehreren Ebenen gleichzeitig ab.])
 
-Wenn eine Situation geschildert ist, ist diese 
-Situation Arbeitshypothese
 
-== Political Awareness
-Hauptziel: Safe Space
+= Grundsätze der Awarenessarbeit
 
-==> Gesellschaftliche Ausweitung
+Unser Ziel ist es einen "Safer Space" zu schaffen, d.h. einen Ort an
+dem sich alle Personen sicher(er) fühlen. Leider ist es in der Praxis
+bei öffentlichen Veranstaltungen 
+nicht möglich die Sicherheit und das Wohlbefinden für Alle zu garantieren.
+Unsere Präszenz auf Veranstaltungen soll hier präventiv wirken und auch
+Gäste dazu ermutigen auf falsches Verhalten hinzuweisen (Empowerment).
 
-- Language:
- Opfer/Taeter vs. Betroffene/Handelnde Person
- --> vermeidung der Retraumatisierung
-== Grundsaetze der Awarenessarbeit
+== Affirmative Consent
+Aus dem Englischen übersetzt "ausdrückliches Einverständnis". Das
+gilt für Gäste der Veranstaltung und für uns! 
 
-+ Consent
-+ Respekt vor individuellen Grenzen
-+ Betroffene bestimmen selbst die Situation
+== Respekt vor individuellen Grenzen
+Jeder Mensch definiert seine Grenzen anders. Wir respektieren immer die
+Grenzen des Individuums.
  
- ==> Definitionsmacht
-+ Solidaritaet mit marginalisierten Gruppen
+== Definitionsmacht
+Definitionsmacht bedeutet, dass die von Gewalt oder Diskriminierung betroffene Person selbst definiert, welche Form der (sexualisierten) Gewalt oder Diskriminierung sie erlebt hat und dabei die Begriffe wählt, die für Sie das Geschehene am besten beschreiben. 
+Die Aussagen der betroffenen Person sind unsere Arbeitshypothese, wir
+versuchen nicht den Sachverhalt zu beweisen oder zu widerlegen.
+Wichtig hier: Die Sprache der betroffenen Person wird übernommen! Wenn
+eine Person nach eigenen Angaben "gefingert" wurde, verwenden wir auch 
+diesen Begriff und sprechen nicht von einer "Vergewaltigung". 
+Das Ziel ist hier die Vermeidung einer Retraumatisierung.
+Wir sprechen auch nicht von "Täter" und "Opfer" sondern von 
+beteiligten bzw. betroffenen Personen.
 
-== Wieso Awareness?
+== Visibility
+Als Awareness Team sind wir mit Westen/Shirts o.ä. klare
+gekennzeichnet. So wissen betroffene Personen an wen sie sich wenden 
+können. Auch Personal der Location selbst soll klar wissen, wer für 
+Awareness Arbeit zuständig ist. 
 
-+ klare Kennzeichnung der Ansprechpersonen
-+ Schutz der Betroffenen
-+ In jedem Fall *Gegenmassnahmen ergreifen*. 
- Rechtliche Konsequenzen sonst moeglich
-+ Schutz der Beteiligten
- ==> AUCH Selbstschutz
+== Schutz von Betroffenen und Beteiligten
+Leider ist Prävention nicht unsere einzige Aufgabe, viele Situationen 
+erfordern von uns konkretes Handeln. Achtet dabei immer zuerst, dass
+der Schutz für alle Beteiligten gewährleistet werden kann, holt z.B. auch
+eine Sicherheitskraft hinzu. Wichtig: Vergesst hier auch nie eure eigene
+Sicherheit.
 
-=== Definition Saver Space
+== Im Zweifel
+Zwischenmenschliche Situationen sind komplex, v.a. wenn dies gepaart 
+mit Drogenkonsum ist. Falls ihr euch nicht sicher seid wie ihr 
+am besten handeln solltet holt euch immer Verstärkung dazu und/oder sagt
+der leitenden Person Bescheid.
 
-"sicherer" Ort oder Raum fuer marginalisierte 
-Gruppen. Hier ist freier Ausdruck moeglich.
+= Code of Conduct
 
-=== Wichtig
-der CoC (Code of Conduct zu deutsch "Verhaltenskodex") soll von allen eingehalten werden.
-Bei Nichteinhaltung zunaechst nicht belehren, sondern erklaeren.
-Auch selbst offen sein "dazuzulernen".
+Aus dem Englischen übersetzt "Verhaltensregeln" bzw. "Verhaltenskodex".
+Ein Code of Conduct (CoC) definiert klare Regeln um einen safer space zu
+schaffen.
 
-Sicherheit basiert stark auf Praevention und Empowerment ==> Sichtbarkeit ist wichtig!
+== No exceptions!
+Es ist essenziell, dass sich
+alle teilnehmenden Personen einer Veranstaltung an diese Regeln halten.
+Das gilt insbesondere auch für veranstaltende sowie kunstschaffende 
+Personen und Mitglieder des Teams - es gibt keine Ausnahmen!
 
-*Verletzungen dokumentieren!*
-== CoC Step-By-Step
+== Durchsetzung
+Bei der Durchsetzung eines CoC steht auch die Aufklärung im Fordergrund.
+Versucht nicht zu belehren, sondern zu erklären und seid offen dafür selbst
+auch dazuzulernen. Das gilt auch, wenn ihr eine Person der Veranstaltung 
+verweisen müsst. Hier jedoch zu beachten: Wer es nicht verstehen will, 
+versteht es auch nicht. Investiert nicht zu viel Zeit die sich am 
+Ende nicht lohnt.
 
-=== Mit Verantstalter 
-+ Welche Werte?
-+ Welche Atmosphaere?
+== Erstellung und Umsetzung
+Damit ein CoC effektiv Problemen vorbeugen kann, müssen diese auch 
+identifiziert werden. Ein paar Beispiele hilfreicher Fragen hierbei:
 
-Wie ist die Situation?
+1. Welche Atmosphäre soll geschaffen werden?
+2. Welche Werte sollen vordergründlich eingehalten werden?
+3. Wie gestaltet sich die Situation vor Ort?
 
-+ Wv. Zwischenfaelle?
-+ Was kann hat das Personal beobachtet?
-+ Bestehende Massnahmen?
-+ Aenderungsziele?
-+ Dezentralisierte Szene
-
-Sammlung unserer Probleme:
-
-- *Ketamin!!*
-- Sexualisierte Gewalt ==> Ausloeser oft *Alkohol*
-- rassistisches Verhalten
-
-Positives unserer Szene:
-
-+ Komplett offener Dresscode
-
-=== Diversity
-
-+ diverses Team <==> diverses Publikum
-        - Team sensibilisiert?
-        - Proaktivitaet?
-        - Barrierefreiheit? \ *kommunizieren!*
-        - *Kuenstler* auch divers? \
-         CoC vertraglich regeln bzw. 
-         Kunstschaffende aufklaeren
-+ wie koennen Gaeste beeinflusst werden sich an
- den CoC zu halten
-+ No Shirt No Service:
- vermeidung von sexualisierung fem presenting
- Personen ist nicht moeglich - gleiches Recht fuer
- alle
-
- gegenargument - beitrag zum safespace
- gut: immer was zum drueberziehen anhaben, auch leicht 
-
- erfahrungen auf kinkys:
- einheitliche shirts sind NICHT gut angekommen 
- zwecks dresscode
-
-== Visibility/Sichtbarkeit
-
-+ Gibt es Infomaterial?
-+ Policy klar auf der Website?
-+ CoC Teil des Ticketings?
-+ CoC auf social Media
-
-
-*Wichtig:* Sprachbarrieren vermeiden!
-
-Ideen (z.B. Website, Plakate ect.):
-- Auklaerung am Eingang
-- Schilder im Sichtbereich
-- WhatsApp Nummer
-- Verdeckter Alarm
- (Codeworte ect. auch andere Codes; AngelShot)
- --> nicht gekennzeichnete Person d. Awareness
-- Achtung auf "shady" Rauemlichkeiten
-
-==> ausserhalb des Eventbereichs Ziel zurueckfuehren
-in Bereich
-*ACHTUNG* auf eigene Person. Vllt. Kontrollgang
-in Gruppen
-
-== Deckung der Grundbeduerfnisse
-
-- Wasser
-- Essen 
-- Supplements
-- auch Infomaterialien
-- ect.
-
-Dextrose vermeiden; Aggregat4
-
-Dokumentation:
-Julian :,)
-
-= Arbeitsansatz
-TODO zwei Punkte eintragen
-9 D
-- Diagnose
- Situation einschaetzen
- Raum + Menschen lesen
-- Direct
- direkte Sprache
--  Disarm
- 
-        keep calm/deescalate
-- Distract
-- Deescalate
-- Debrief
-
-= Konfliktbereiche
-- Ableism
-- Sexism
-- Homo-/Trans-/Sexophobie
-- Racism
-- Ableism
-- Drug-/Body-/Kink-/Slut-Shaming
-- Streit
-- Gewalt Koerperlich/Sprachlich
-- Gruppenzwang
-- Sexualisierte Gewalt
- Sexuelle Handlung ohne Consent bzw. ohne
- Faehigkeit zum Consent
- --> affirmative consent!
-
-        - catcalling
-        - stealthing
-        - sexual exploitation
-         \ special awareness fuer 
-         mitglieder marginalisierter gruppen, hier
-         fehlt schutz
-        - upskirting/downblousing
-        - stalking
-        - anzuegliche Kommentare
-        - sexual harrassment
-        - sexistische witze
-        - entbloessung
-        - reframing
-        - grabschen
-        - videos/fotos senden/erstellen ohne consent
-        - voyeurism
-
-= Auftreten des Teams
-- persoenlicher Schutz + Ausruestung
-
-Wichtige Strukturen
-
-- Security
-- Awareness Raum
-        - konsumfrei
-        - peace and quiet
-        - aufenthalt nur in Awesenheit von Betroffenen
-
-Jetzige Situaion:
-Gemeinnuetzigkeit
-
-Ab Bezahlung:
-Versicherung
-== Umgang mit Betroffenen
-
-Teil des unterstuetzendes Systems
-- Definitionsmacht ect.
-- Space geben
-- Restore Safespace
-- gewaltfreie und situationssensible Sprache
-- keine Hilfe, sondern support
-- neutralitaet wahren
-- nachhaltige unterstuetzung
-        - Beratungsstellen
-        - email fuer Nachfragen (hier auch rechtlich)
-- wer soll sprechen? ==> entscheidung bei der 
- betroffenen person
-
-Schuldgedanken vermeiden, reframing 
---> es zaehlt der Support im Moment
-
-Arbeitsfelder:
-+ Mediation
-+ Clubverweise
-+ Eskalation an Polizei ist Offizialdelikt
- \ *Nie Anzeige ohne Einwilligung betroffener Person*
-
-== Gewaltausuebende Personen
-*security dabeihaben!*
-
-Transformative Arbeit - es gilt der rehabilitive
-Ansatz ==>
-
-- neutrale Bewusstmachung der Problematik
-
-3 moeglichkeiten
-+ Positive + Konstruktive Aufnahme
- ==> Nach Absprache mit betroffener Person muss
- kein Verweis erfolgen
-+ passives Verhalten
-+ aggressives Verhalten
-
-=== Marshall-Rosenberg Modell
-Erfragung und Kommunikation von:
-+ Beobachtung
-+ Gefühl 
-+ Beduerfniss
-+ Appell/Bitte
-
-         
-= Books
-Was tun bei sexualisierter Gewalt \
-Politische Awarenessarbeit
-
-
-TODO Website
-Taschenlampe
-Bauchtasche
-Kalium, Magnesium ect
-
-wenn veranstaltung -> gaesteliste :,D
-
-#bibliography(title:"Quellen", "sources.yml")
+Zusätzlich ist es wichtig, dass auch alle Teilnehmenden den CoC kennen
+und diesem zustimmen (z.B. implizit mit Betreten der Veranstaltung oder 
+explizit mit Zustimmung beim Ticketkauf). Idealerweise wird dies
+durch Plakate auf der Veranstaltung o.ä. unterstützt.
