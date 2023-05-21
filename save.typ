@@ -181,7 +181,7 @@ Teil des unterstuetzendes Systems
         - Beratungsstellen
         - email fuer Nachfragen (hier auch rechtlich)
 - wer soll sprechen? ==> entscheidung bei der 
- betroffenen person
+ betroffenen person¨
 
 Schuldgedanken vermeiden, reframing 
 --> es zaehlt der Support im Moment

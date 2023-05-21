@@ -91,8 +91,8 @@ Genderfluid (verändernde Geschlechtsidentität) identifizieren.])
 text[Vom englischen "Cultural Appropriation" (somit eher "Kulturdiebstahl"); Die Aneignung kulturellen Gutes marginalisierter
 Gruppen. Klassisches Beispiel: Verkleidung als "Indianer" zu Fasching.])
 
-#defbox("FLINTA*", 
-text[Abkürzung für "Frauen, Lesben, Inter, Non-Binary, Trans, A-gender" und ist der Versuch einen Ausdruck für eine Personengruppe zu finden, die nicht cis-männlich ist.
+#defbox("FINTA*", 
+text[Abkürzung für "Frauen, Inter, Non-Binary, Trans, A-gender" und ist der Versuch einen Ausdruck für eine Personengruppe zu finden, die nicht cis-männlich ist.
 Der "\*" soll hier auch alle Identitäten abdecken, die nicht 
 im Akronym zu finden sind. ])
 
@@ -105,10 +105,10 @@ text[Marginalisierung bezeichnet die Verdrängung von Individuen oder Bevölkeru
 
 = Grundsätze der Awarenessarbeit
 
-Unser Ziel ist es einen "Safer Space" zu schaffen, d.h. einen Ort an
+Unser Ziel ist es, einen "Safer Space" zu schaffen, d.h. einen Ort, an
 dem sich alle Personen sicher(er) fühlen. Leider ist es in der Praxis
 bei öffentlichen Veranstaltungen 
-nicht möglich die Sicherheit und das Wohlbefinden für Alle zu garantieren.
+nicht möglich, die Sicherheit und das Wohlbefinden für Alle zu garantieren.
 Unsere Präszenz auf Veranstaltungen soll hier präventiv wirken und auch
 Gäste dazu ermutigen auf falsches Verhalten hinzuweisen (Empowerment).
 
@@ -132,7 +132,7 @@ Wir sprechen auch nicht von "Täter" und "Opfer" sondern von
 beteiligten bzw. betroffenen Personen.
 
 == Visibility
-Als Awareness Team sind wir mit Westen/Shirts o.ä. klare
+Als Awareness Team sind wir mit Westen/Shirts o.ä. klar
 gekennzeichnet. So wissen betroffene Personen an wen sie sich wenden 
 können. Auch Personal der Location selbst soll klar wissen, wer für 
 Awareness Arbeit zuständig ist. 
@@ -145,15 +145,15 @@ eine Sicherheitskraft hinzu. Wichtig: Vergesst hier auch nie eure eigene
 Sicherheit.
 
 == Im Zweifel
-Zwischenmenschliche Situationen sind komplex, v.a. wenn dies gepaart 
-mit Drogenkonsum ist. Falls ihr euch nicht sicher seid wie ihr 
+Zwischenmenschliche Situationen sind komplex. 
+Falls ihr euch nicht sicher seid wie ihr 
 am besten handeln solltet holt euch immer Verstärkung dazu und/oder sagt
 der leitenden Person Bescheid.
 
 = Code of Conduct
 
 Aus dem Englischen übersetzt "Verhaltensregeln" bzw. "Verhaltenskodex".
-Ein Code of Conduct (CoC) definiert klare Regeln um einen safer space zu
+Ein Code of Conduct (CoC) definiert klare Regeln, um einen safer space zu
 schaffen.
 
 == No exceptions!
@@ -163,12 +163,13 @@ Das gilt insbesondere auch für veranstaltende sowie kunstschaffende
 Personen und Mitglieder des Teams - es gibt keine Ausnahmen!
 
 == Durchsetzung
-Bei der Durchsetzung eines CoC steht auch die Aufklärung im Fordergrund.
-Versucht nicht zu belehren, sondern zu erklären und seid offen dafür selbst
+Bei der Durchsetzung eines CoC steht auch die Aufklärung im Vordergrund.
+Versucht nicht zu belehren, sondern zu erklären und seid offen dafür, selbst
 auch dazuzulernen. Das gilt auch, wenn ihr eine Person der Veranstaltung 
-verweisen müsst. Hier jedoch zu beachten: Wer es nicht verstehen will, 
-versteht es auch nicht. Investiert nicht zu viel Zeit die sich am 
-Ende nicht lohnt.
+verweisen müsst. Diesen Ansatz bezeichnet man auch als "transformativ".
+Hier jedoch zu beachten: Wer es nicht verstehen will, 
+versteht es auch nicht. Investiert nicht zu viel Zeit,
+die sich am Ende nicht lohnt.
 
 == Erstellung und Umsetzung
 Damit ein CoC effektiv Problemen vorbeugen kann, müssen diese auch 
@@ -182,3 +183,46 @@ Zusätzlich ist es wichtig, dass auch alle Teilnehmenden den CoC kennen
 und diesem zustimmen (z.B. implizit mit Betreten der Veranstaltung oder 
 explizit mit Zustimmung beim Ticketkauf). Idealerweise wird dies
 durch Plakate auf der Veranstaltung o.ä. unterstützt.
+
+= Umgang mit betroffenen Personen
+
+Unser Ziel ist es Teil des akut unterstützendes Systems zu sein. 
+Mit dem Umsetzen der Definitionsmacht (c.f. Grundsätze der Awareness)
+beinhaltet dies auch die Wiederherstellung des safer space.
+
+Durch einen Awareness Raum haben wir die Möglichkeit 
+betroffene Personen aus Situationen zu isolieren und 
+ihren safer Space wiederherzustellen. Achtet hier darauf,
+dass ihr der betroffenen Person stets die Möglichkeit gebt,
+Bedürfnisse, Bedenken o.ä. zu äussern. Hier ist besonders wichtig,
+dass Sprache stets gewaltfrei und situationssensibel bleibt.
+
+= Zuständigkeitsbereich
+
+Primär agieren wir im Bereich der Veranstaltung. Es ist aber genauso
+wichtig einen Überblick um unmitelbares Gelände zu behalten. 
+Gibt es z.B. schlecht beleuchtete Seitengassen o.ä sollten
+auch Kontrollgänge hier durchgeführt werden. Dabei solltet ihr am
+besten als Team gehen, um eure eigene Sicherheit gewährleisten
+zu können. Bedenkt, dass ihr ausserhalb des Veranstaltungsgeländes
+kein Hausrecht habt.
+
+
+= Konfliktbewältigung
+
+Nicht jede Konfliktsituation muss zu Ausschluss beteiligter
+Personen führen, sofern klare, im CoC festgelegte Grenzen nicht
+überschritten werden. Das Ziel ist hier zunächst die Aufklärung
+über die zugrundelegende Problematik. Eine konstruktive Lösung
+mit Einverständnis betroffener Personen kann bei
+Verständnis erfolgen. Hier hilft z.B. das Kommunikationsmodell
+der gewaltfreien Kommunikation von Rosenberg.
+
+Ist dies nicht gegeben, erfolgt ein Verweis der Veranstaltung. Dabei 
+sollte eine weitere Eskalation vermieden werden und Personen 
+zunächst freundlich, aber bestimmt um das Verlassen der Veranstaltung
+gebeten werden.
+
+Habt ihr Angst vor einer Eskalation (vor oder während der Mediation)
+holt euch immer eine Sicherheitskraft dazu.
+
